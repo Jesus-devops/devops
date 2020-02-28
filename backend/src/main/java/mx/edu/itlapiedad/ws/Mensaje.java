@@ -61,5 +61,9 @@ public class Mensaje {
 		repositorio.actualizar(alumno);
 	}
 	
+	@GetMapping("suma/{num1}/{num2}")
+	public int suma(@PathVariable int num1, @PathVariable int num2) {
+		return num1+num2;
+	}
 	
 }
