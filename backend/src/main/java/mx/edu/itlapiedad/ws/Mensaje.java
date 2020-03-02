@@ -65,5 +65,4 @@ public class Mensaje {
 	public int suma(@PathVariable int num1, @PathVariable int num2) {
 		return num1+num2;
 	}
-	
 }
