@@ -30,8 +30,8 @@ public class Mensaje {
 	@GetMapping("alumno")
 	public Alumno mostrarAlumno() {
 		Alumno alumno = new Alumno();
-		alumno.setNombre("Pacheco");
-		alumno.setNocontrol("16640121");
+		alumno.setNombre("Chuche");
+		alumno.setNocontrol("16640666");
 		alumno.setCarrera_id(1);
 		return alumno;
 	}
@@ -61,11 +61,8 @@ public class Mensaje {
 		repositorio.actualizar(alumno);
 	}
 	
-	//otra vez2
-		@GetMapping("suma/{num1}/{num2}")
-		public int suma(@PathVariable int num1, @PathVariable int num2) {
-			return num1+num2;
-		}
-	
-	
+	@GetMapping("suma/{num1}/{num2}")
+	public int suma(@PathVariable int num1, @PathVariable int num2) {
+		return num1+num2;
+	}
 }
